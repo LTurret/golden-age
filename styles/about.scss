@@ -1,0 +1,53 @@
+$primaryColor: #c7b83c;
+$secondaryColor: #f0f0f0;
+$textColor: #393939;
+
+main {
+  section.main-area {
+    // border: 2px, solid, black;
+    min-height: 75vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div.info {
+      flex-basis: 500px;
+      padding: 1rem;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h2 {
+        margin-top: 1.25rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    div.img-area {
+      flex-basis: 350px;
+      margin-left: 3rem;
+      margin-right: 1.5rem;
+      img {
+        border-radius: 100%;
+        width: 100%;
+        animation: breathingLight 5s ease-in-out infinite;
+      }
+
+      @keyframes breathingLight {
+        0% {
+          filter: drop-shadow(0 0 0px $textColor);
+        }
+        50% {
+          filter: drop-shadow(0 0 50px $secondaryColor);
+        }
+        100% {
+          filter: drop-shadow(0 0 5px $secondaryColor);
+        }
+      }
+    }
+  }
+}

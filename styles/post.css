@@ -1,0 +1,44 @@
+body nav {
+  z-index: 2;
+}
+body main {
+  margin-bottom: 10rem;
+}
+body main section.main-area div.info h1 {
+  margin-top: 4.25rem;
+}
+body main section.main-area div.info h2 {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  padding-left: 0.25rem;
+  letter-spacing: 0.2rem;
+}
+body main section.main-area div.info h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  letter-spacing: 0;
+}
+body main section.main-area div.info p {
+  letter-spacing: 0.05rem;
+  line-height: 1.75rem;
+}
+body main section.main-area div.info img {
+  border-radius: 10px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.1s ease;
+}
+body main section.main-area div.info img:hover {
+  transform: scale(1.025);
+  z-index: -2;
+}
+body main section.main-area div.info ul li {
+  letter-spacing: 0.05rem;
+  padding-top: 0.5rem;
+}
+body main section.main-area div.info ol li {
+  letter-spacing: 0.05rem;
+  padding-top: 0.75rem;
+}/*# sourceMappingURL=post.css.map */

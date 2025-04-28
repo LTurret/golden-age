@@ -1,0 +1,56 @@
+main section div h1 {
+  margin-bottom: 5rem;
+}
+main section div article.post {
+  margin-bottom: 5rem;
+}
+main section div article.post a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #393939;
+  transition: all 0.5s ease;
+}
+main section div article.post a:hover {
+  color: #c7b83c;
+}
+main section div article.post p {
+  margin-top: 1rem;
+  padding-left: 0.25rem;
+  letter-spacing: 0.1rem;
+}
+main section div article.post ul {
+  margin-top: 1rem;
+  display: flex;
+}
+main section div article.post ul li {
+  font-size: 0.5rem;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+main section div article.post ul li h3 {
+  background-color: #aaaaaa;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 0;
+  font-size: 1rem;
+}
+main section div article.post ul li a {
+  display: flex;
+  background-color: #c7b83c;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 0;
+  transition: all 0.25s ease;
+}
+main section div article.post ul li a:hover {
+  color: white;
+  transform: scale(1.2);
+}/*# sourceMappingURL=blog.css.map */

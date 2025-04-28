@@ -1,0 +1,41 @@
+main section.main-area {
+  min-height: 75vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main section.main-area div.info {
+  flex-basis: 500px;
+  padding: 1rem;
+}
+main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+main section.main-area div.info h2 {
+  margin-top: 1.25rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+main section.main-area div.img-area {
+  flex-basis: 350px;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+}
+main section.main-area div.img-area img {
+  border-radius: 100%;
+  width: 100%;
+  animation: breathingLight 5s ease-in-out infinite;
+}
+@keyframes breathingLight {
+  0% {
+    filter: drop-shadow(0 0 0px #393939);
+  }
+  50% {
+    filter: drop-shadow(0 0 50px #f0f0f0);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #f0f0f0);
+  }
+}/*# sourceMappingURL=about.css.map */

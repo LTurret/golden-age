@@ -1,0 +1,98 @@
+$primaryColor: #c7b83c;
+$secondaryColor: #f0f0f0;
+$textColor: #393939;
+
+@font-face {
+  font-family: jf-openhuninn;
+  src: url("./../assets/jf-openhuninn-2.1.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-family: jf-openhuninn;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $textColor;
+  font-weight: normal;
+}
+
+body {
+  nav {
+    position: sticky;
+    top: 0px;
+    min-height: 5vh;
+    background-color: $secondaryColor;
+    ul {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin: 1rem;
+        a {
+          color: $textColor;
+          transition: all 0.25s ease;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  section.main-area {
+    // border: 2px, solid, black;
+    min-height: 75vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div.info {
+      flex-basis: 500px;
+      padding: 1rem;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h2 {
+        margin-top: 1.25rem;
+        font-size: 1rem;
+      }
+    }
+
+    div.img-area {
+      //   border: 2px, solid, red;
+      flex-basis: 500px;
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 0.1rem;
+  width: 100%;
+  background-color: $secondaryColor;
+  p {
+    font-size: 0.75rem;
+    margin: 0.75rem;
+    color: #afafaf;
+  }
+}
