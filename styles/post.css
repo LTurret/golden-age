@@ -19,6 +19,14 @@ body main section.main-area div.info h3 {
   font-size: 1.75rem;
   letter-spacing: 0;
 }
+body main section.main-area div.info a {
+  text-decoration: none;
+  color: #547792;
+  transition: all 0.25s ease;
+}
+body main section.main-area div.info a:hover {
+  color: #c7b83c;
+}
 body main section.main-area div.info p {
   letter-spacing: 0.05rem;
   line-height: 1.75rem;
@@ -41,4 +49,6 @@ body main section.main-area div.info ul li {
 body main section.main-area div.info ol li {
   letter-spacing: 0.05rem;
   padding-top: 0.75rem;
-}/*# sourceMappingURL=post.css.map */
+}
+
+/*# sourceMappingURL=post.css.map */

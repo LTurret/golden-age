@@ -1,3 +1,8 @@
+$primaryColor: #c7b83c;
+$secondaryColor: #f0f0f0;
+$textColor: #393939;
+$urlColor: #547792;
+
 body {
   nav {
     z-index: 2;
@@ -25,6 +30,14 @@ body {
           letter-spacing: 0;
         }
 
+        a {
+          text-decoration: none;
+          color: $urlColor;
+          transition: all 0.25s ease;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
         p {
           letter-spacing: 0.05rem;
           line-height: 1.75rem;

@@ -1,3 +1,7 @@
+nav {
+  z-index: 2;
+}
+
 main section.main-area {
   min-height: 75vh;
   background-color: white;
@@ -22,6 +26,7 @@ main section.main-area div.img-area {
   flex-basis: 350px;
   margin-left: 3rem;
   margin-right: 1.5rem;
+  z-index: 1;
 }
 main section.main-area div.img-area img {
   border-radius: 100%;
@@ -38,4 +43,6 @@ main section.main-area div.img-area img {
   100% {
     filter: drop-shadow(0 0 5px #f0f0f0);
   }
-}/*# sourceMappingURL=about.css.map */
+}
+
+/*# sourceMappingURL=about.css.map */
