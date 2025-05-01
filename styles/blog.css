@@ -28,9 +28,9 @@ main section div article.post ul li {
   margin-right: 1rem;
 }
 main section div article.post ul li h3 {
-  background-color: #aaaaaa;
+  background-color: #f0f0f0;
   border-radius: 20px;
-  color: white;
+  color: #393939;
   font-size: 1rem;
   padding: 0.5rem;
   padding-left: 1rem;
@@ -53,6 +53,4 @@ main section div article.post ul li a {
 main section div article.post ul li a:hover {
   color: white;
   transform: scale(1.2);
-}
-
-/*# sourceMappingURL=blog.css.map */
+}/*# sourceMappingURL=blog.css.map */

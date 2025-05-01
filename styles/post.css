@@ -8,10 +8,15 @@ body main section.main-area div.info h1 {
   margin-top: 4.25rem;
 }
 body main section.main-area div.info h2 {
-  margin-top: 0.25rem;
+  margin-top: 1rem;
   font-size: 1.25rem;
   padding-left: 0.25rem;
-  letter-spacing: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 7px;
+  background-color: #f0f0f0;
 }
 body main section.main-area div.info h3 {
   margin-top: 2.5rem;
@@ -49,6 +54,4 @@ body main section.main-area div.info ul li {
 body main section.main-area div.info ol li {
   letter-spacing: 0.05rem;
   padding-top: 0.75rem;
-}
-
-/*# sourceMappingURL=post.css.map */
+}/*# sourceMappingURL=post.css.map */

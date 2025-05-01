@@ -37,9 +37,9 @@ main {
             list-style-type: none;
             margin-right: 1rem;
             h3 {
-              background-color: $secondaryTextColor;
+              background-color: $secondaryColor;
               border-radius: 20px;
-              color: white;
+              color: $textColor;
               font-size: 1rem;
               padding: 0.5rem;
               padding-left: 1rem;
@@ -47,6 +47,7 @@ main {
               letter-spacing: 0;
               font-size: 1rem;
             }
+
             a {
               display: flex;
               background-color: $primaryColor;
@@ -58,6 +59,7 @@ main {
               padding-right: 1rem;
               letter-spacing: 0;
               transition: all 0.25s ease;
+
               &:hover {
                 color: white;
                 transform: scale(1.2);

@@ -15,12 +15,17 @@ body {
         h1 {
           margin-top: 4.25rem;
         }
-        // border: 2px, solid, red;
+
         h2 {
-          margin-top: 0.25rem;
+          margin-top: 1rem;
           font-size: 1.25rem;
           padding-left: 0.25rem;
-          letter-spacing: 0.2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          letter-spacing: 0.1rem;
+          border: 2px solid $secondaryColor;
+          border-radius: 7px;
+          background-color: $secondaryColor;
         }
 
         h3 {
