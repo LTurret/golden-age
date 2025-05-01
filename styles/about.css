@@ -2,25 +2,29 @@ nav {
   z-index: 2;
 }
 
-main section.main-area {
-  min-height: 75vh;
-  background-color: white;
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+main section.main-area {
+  margin-top: 8vh;
+  min-height: 10vh;
+  max-width: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main section.main-area div.img-area {
+  width: 70%;
+}
 main section.main-area div.info {
-  flex-basis: 500px;
-  padding: 1rem;
-}
-main section.main-area div.info h1 {
-  font-size: 3.5rem;
-}
-main section.main-area div.info h2 {
-  margin-top: 1.25rem;
-  margin-left: 0.5rem;
-  font-size: 1rem;
+  text-align: center;
+  margin-left: 1.85rem;
 }
 main section.main-area div.img-area {
   flex-basis: 350px;
