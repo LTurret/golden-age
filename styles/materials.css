@@ -79,7 +79,7 @@ body main section.main-area div.info .copy-block {
 body main section.main-area div.info .copy-block textarea {
   display: block;
   flex: 1 1 auto;
-  min-height: 4rem;
+  height: 4rem;
   box-sizing: border-box;
   padding: 0.5rem;
   resize: none;
