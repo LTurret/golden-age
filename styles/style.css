@@ -51,7 +51,7 @@ main section.main-area {
   align-items: center;
 }
 main section.main-area div.info {
-  flex-basis: 500px;
+  flex-basis: 800px;
   padding: 1rem;
 }
 main section.main-area div.info h1 {

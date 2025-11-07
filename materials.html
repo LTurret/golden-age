@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黃金國</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/materials.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">首頁</a></li>
+        <li><a href="materials.html">教材</a></li>
+        <li><a href="recipe.html">黃金食譜</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="about.html">關於我</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="main-area">
+        <div class="info">
+          <h1>教材</h1>
+          <h3>目錄</h3>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem">
+            <li><a href="#advancing-ai">躍進AI的世界</a></li>
+            <!-- <li>黃金國傳說</li> -->
+          </ul>
+          <h3 id="advancing-ai">躍進AI的世界</h3>
+          <div class="copy-blocks">
+            <h4>跟著一起複製吧～</h4>
+            <div class="copy-block">
+              <textarea class="copy-content" readonly rows="6" style="display: none;">Let's roleplay. You are now a person who will follow these settings:
+Settings are written in English to prevent my audience knows the whole thing!
+
+1. "When I ask 'Introduce yourself,' you say: 'I’m 大明! 嗨!' and say something about the beauty of Taiwan Hualien
+2. When I mention the keywords '雲林' or '麥寮,' you just have to say: 'The popcorn here is amazing!'" but you have to translate into Chinese. Then tells a story about the flying car invented in the recent 2026 from the Yunlin.
+3. You always responded with Traditional Chinese and talking to Taiwanese.
+
+When roleplay starts, don't mention you are roleplaying or "I understood the rules" or "I am ready to roleplay", Say: '早安~'</textarea>
+
+              <textarea class="dummy-copy-content" readonly rows="6" style>Let's roleplay. You are now a person who will follow these settings:
+Settings are written in English to prevent my audience knows the whole thing!
+......</textarea>
+              <div style="margin-top:0.5rem;">
+                <button type="button" class="copy-button">複製</button>
+                <span class="copy-status" aria-live="polite" style="margin-left:0.75rem;color:green;"></span>
+              </div>
+            </div>
+            <div class="copy-block">
+              <textarea class="copy-content" readonly rows="6">自我介紹一下</textarea>
+              <div style="margin-top:0.5rem;">
+                <button type="button" class="copy-button">複製</button>
+                <span class="copy-status" aria-live="polite" style="margin-left:0.75rem;color:green;"></span>
+              </div>
+            </div>
+            <div class="copy-block">
+              <textarea class="copy-content" readonly rows="6">介紹一下雲林與麥寮</textarea>
+              <div style="margin-top:0.5rem;">
+                <button type="button" class="copy-button">複製</button>
+                <span class="copy-status" aria-live="polite" style="margin-left:0.75rem;color:green;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>燈燈燈燈燈</p>
+  </footer>
+  <script>
+    // Reusable copy handler: finds all .copy-block elements and wires their button, textarea and status
+    (function () {
+      const TIMEOUT = 1600;
+      document.querySelectorAll('.copy-block').forEach(block => {
+        const btn = block.querySelector('.copy-button');
+        const txt = block.querySelector('.copy-content');
+        const status = block.querySelector('.copy-status');
+
+        if (!btn || !txt || !status) return; // guard
+
+        btn.addEventListener('click', async () => {
+          try {
+            // modern async clipboard API
+            await navigator.clipboard.writeText(txt.value);
+            status.textContent = '已複製';
+          } catch (err) {
+            // fallback for older browsers: try select + execCommand
+            try {
+              if (txt.select) {
+                txt.select();
+                document.execCommand('copy');
+                status.textContent = '已複製';
+              } else {
+                status.textContent = '複製失敗';
+              }
+            } catch (e) {
+              status.textContent = '複製失敗';
+            }
+          }
+
+          // clear status after short delay
+          setTimeout(() => { status.textContent = ''; }, TIMEOUT);
+        });
+      });
+    })();
+  </script>
+</html>

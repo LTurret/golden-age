@@ -1,0 +1,103 @@
+body nav {
+  z-index: 2;
+}
+body main {
+  margin-bottom: 10rem;
+}
+body main section.main-area div.info {
+  display: flex;
+  flex-direction: column;
+}
+body main section.main-area div.info h1 {
+  margin-top: 4.25rem;
+}
+body main section.main-area div.info h2 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding-left: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 7px;
+  background-color: #f0f0f0;
+}
+body main section.main-area div.info h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  letter-spacing: 0;
+}
+body main section.main-area div.info a {
+  text-decoration: none;
+  color: #547792;
+  transition: all 0.25s ease;
+}
+body main section.main-area div.info a:hover {
+  color: #c7b83c;
+}
+body main section.main-area div.info p {
+  letter-spacing: 0.05rem;
+  line-height: 1.75rem;
+}
+body main section.main-area div.info img {
+  border-radius: 10px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  transition: all 0.1s ease;
+}
+body main section.main-area div.info img:hover {
+  transform: scale(1.025);
+  z-index: -2;
+}
+body main section.main-area div.info ul li {
+  letter-spacing: 0.05rem;
+  padding-top: 0.5rem;
+}
+body main section.main-area div.info ol li {
+  letter-spacing: 0.05rem;
+  padding-top: 0.75rem;
+}
+body main section.main-area div.info .copy-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main section.main-area div.info .copy-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+body main section.main-area div.info .copy-block textarea {
+  display: block;
+  flex: 1 1 auto;
+  min-height: 4rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  resize: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: #393939;
+}
+body main section.main-area div.info .copy-block button {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background: #c7b83c;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}/*# sourceMappingURL=materials.css.map */
