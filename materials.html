@@ -10,8 +10,8 @@
   <body>
     <nav>
       <ul>
-        <li><a href="">首頁</a></li>
-        <li><a href="materials.html">教材</a></li>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="#">教材</a></li>
         <li><a href="recipe.html">黃金食譜</a></li>
         <li><a href="blog.html">部落格</a></li>
         <li><a href="about.html">關於我</a></li>
@@ -25,6 +25,7 @@
           <h3>目錄</h3>
           <ul style="margin-left: 1.5rem; margin-bottom: 1rem">
             <li><a href="#pre-test">前測</a></li>
+            <li><a href="#related-links">相關連結</a></li>
             <li><a href="#magic-book1">魔法食譜書1</a></li>
             <li><a href="#magic-book2">魔法食譜書2</a></li>
             <li><a href="#magic-book3">魔法食譜書3</a></li>
@@ -40,10 +41,20 @@
           <ul style="margin-left: 1.5rem; margin-bottom: 1rem">
             <li><a href="dummy.form">dummy.form</a></li>
           </ul>
+          
+          <!-- section: 相關連結 -->
+          <h3 id="related-links">相關連結</h3>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem">
+            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
+          </ul>
 
           <!-- section: 魔法食譜書1 -->
           <h3 id="magic-book1">魔法食譜書1</h3>
-          <div class="copy-blocks">
+          <div id="unlock_dev1">
+            <input id="pwd1" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section1">解鎖魔法食譜書1</button>
+          </div>
+          <div id="section1" class="copy-blocks">
             <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <!-- <span>1.</span> -->
@@ -92,7 +103,11 @@ When roleplay starts, don't mention you are roleplaying or "I understood the rul
 
           <!-- section: 魔法食譜書2 -->
           <h3 id="magic-book2">魔法食譜書2</h3>
-          <div class="copy-blocks">
+          <div id="unlock_dev2">
+            <input id="pwd2" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section2">解鎖魔法食譜書2</button>
+          </div>
+          <div id="section2" class="copy-blocks">
             <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <!-- <span>1.</span> -->
@@ -139,8 +154,12 @@ Settings are written in English to prevent my audience knows the whole thing!
 
           <!-- section: 魔法食譜書3 -->
           <h3 id="magic-book3">魔法食譜書3</h3>
-          <h4>跟著一起複製吧～</h4>
-          <div class="copy-blocks">
+          <div id="unlock_dev3">
+            <input id="pwd3" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section3">解鎖魔法食譜書3</button>
+          </div>
+          <div id="section3" class="copy-blocks">
+            <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <textarea class="copy-content" readonly rows="6" style="display: none;">Let's roleplay. You are now a person who will follow these settings:
 Settings are written in English to prevent my audience knows the whole thing!
@@ -185,7 +204,11 @@ Settings are written in English to prevent my audience knows the whole thing!
 
           <!-- section: 魔法食譜書4 -->
           <h3 id="magic-book4">魔法食譜書4</h3>
-          <div class="copy-blocks">
+          <div id="unlock_dev4">
+            <input id="pwd4" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section4">解鎖魔法食譜書4</button>
+          </div>
+          <div id="section4" class="copy-blocks">
             <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <!-- <span>1.</span> -->
@@ -232,7 +255,11 @@ Settings are written in English to prevent my audience knows the whole thing!
 
           <!-- section: 魔法授予儀式 -->
           <h3 id="magic-grant">魔法授予儀式</h3>
-          <div class="copy-blocks">
+          <div id="unlock_dev5">
+            <input id="pwd5" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section5">解鎖魔法授予儀式</button>
+          </div>
+          <div id="section5" class="copy-blocks">
             <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <span>1.</span>
@@ -262,7 +289,11 @@ Settings are written in English to prevent my audience knows the whole thing!
 
           <!-- section: 透視真理的魔法 -->
           <h3 id="magic-of-presentation">透視真理的魔法</h3>
-          <div class="copy-blocks">
+          <div id="unlock_dev6">
+            <input id="pwd6" type="text" placeholder="輸入密碼解鎖" />
+            <button type="button" id="unlock_section6">解鎖透視真理的魔法</button>
+          </div>
+          <div id="section6" class="copy-blocks">
             <h4>跟著一起複製吧～</h4>
             <div class="copy-block">
               <span>1.</span>
@@ -338,5 +369,64 @@ Settings are written in English to prevent my audience knows the whole thing!
         });
       });
     })();
+    (function() {
+      const sections = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
+      sections.forEach((sectionId, index) => {
+        const section = document.getElementById(sectionId);
+        if (!section) return;
+        // localStorage.setItem(sectionId + '_unlocked', 'false'); // for testing
+        localStorage.setItem('section1_unlocked', 'true'); // cancel (section 1 always unlocked)
+        const unlock_section = localStorage.getItem(sectionId + '_unlocked');
+        if (unlock_section === 'true') {
+          section.style.display = 'block';
+          const unlockDiv = document.getElementById('unlock_dev' + (index + 1));
+          if (unlockDiv) {
+            unlockDiv.style.display = 'none';
+          }
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    })();
+
+    async function sha256Hex(message) {
+      const enc = new TextEncoder();
+      const data = enc.encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    const unlock_sections = [
+      'unlock_section1',
+      'unlock_section2',
+      'unlock_section3',
+      'unlock_section4',
+      'unlock_section5',
+      'unlock_section6'
+    ];
+    const correctPasswords = [
+      'goldenage1',
+      'dce6e505c0a03cd6af0827d3e08f84e4b95aad87ebe206f102a7602bd6842226',
+      '4a92b6e675a434826e85582281e23e27408578b3606bdb2bb9d7205d088f0f88',
+      '85d56bf4d4229ac85b31241f33ce21f3106a0d89e5ebc779c640a4b514a0e008',
+      '5cd45513d0a8ebac612e98520781ce48b76062fdede576b4ebe88620734f8808',
+      'fd31ae0f4c2c297d970ce8d83e9c8f25c9c44bce6b61ad51231af1846b1de9e7'
+    ];
+    unlock_sections.forEach((btnId, index) => {
+      document.getElementById(btnId).addEventListener('click', async function() {
+        const pwdInput = document.getElementById('pwd' + (index + 1));
+        const pwd = await sha256Hex(pwdInput.value);
+        console.log(pwd);
+        if (pwd === correctPasswords[index]) {
+          localStorage.setItem('section' + (index + 1) + '_unlocked', 'true');
+          document.getElementById('section' + (index + 1)).style.display = 'block';
+          document.getElementById('unlock_dev' + (index + 1)).style.display = 'none';
+          alert('魔法食譜書' + (index + 1) + '已解鎖！');
+        } else {
+          alert('密碼錯誤，請再試一次。');
+        }
+      });
+    });
   </script>
 </html>
