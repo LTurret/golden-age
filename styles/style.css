@@ -61,6 +61,9 @@ main section.main-area div.info h2 {
   margin-top: 1.25rem;
   font-size: 1rem;
 }
+main section.main-area div.center {
+  text-align: center;
+}
 main section.main-area div.img-area {
   flex-basis: 500px;
 }

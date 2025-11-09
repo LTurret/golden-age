@@ -28,6 +28,10 @@ body main section.main-area div.info h3 {
   font-size: 1.75rem;
   letter-spacing: 0;
 }
+body main section.main-area div.info h4 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 body main section.main-area div.info a {
   text-decoration: none;
   color: #547792;
@@ -62,9 +66,9 @@ body main section.main-area div.info ol li {
 body main section.main-area div.info .copy-blocks {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 body main section.main-area div.info .copy-block {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -77,11 +81,13 @@ body main section.main-area div.info .copy-block {
   box-sizing: border-box;
 }
 body main section.main-area div.info .copy-block textarea {
-  display: block;
-  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 4rem;
+  flex: 1 1 auto;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding-top: 1.35rem;
   resize: none;
   border: none;
   background: transparent;
