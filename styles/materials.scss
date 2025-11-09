@@ -38,6 +38,11 @@ body {
           letter-spacing: 0;
         }
 
+        h4 {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+
         a {
           text-decoration: none;
           color: $urlColor;
@@ -46,13 +51,14 @@ body {
             color: $primaryColor;
           }
         }
+
         p {
           letter-spacing: 0.05rem;
           line-height: 1.75rem;
         }
 
         img {
-          // border: 2px, solid, black;
+          // border: 2px, solid, black;A
           border-radius: 10px;
           margin-top: 4rem;
           margin-bottom: 2rem;
@@ -81,13 +87,13 @@ body {
         .copy-blocks {
           display: flex;
           flex-direction: column;
-          gap: 0.5rem;
         }
 
         .copy-block {
+          margin-top: 1rem;
           display: flex;
           flex-direction: row;
-          align-items: center; // vertical centering
+          align-items: center;
           gap: 0.5rem;
           width: 100%;
           border: 1px solid $secondaryColor;
@@ -98,11 +104,13 @@ body {
 
           // textarea fills available space
           textarea {
-            display: block;
-            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 4rem;
+            flex: 1 1 auto;
             box-sizing: border-box;
-            padding: 0.5rem;
+            padding-top: 1.35rem;
             resize: none;
             border: none;
             background: transparent;
